@@ -1,0 +1,32 @@
+package com.tnsif.userdefineException;
+
+public class StudentService {
+	
+	public void setMarks(Student student, int[] marks) throws InvalidmarksException
+	{
+		for(int mark : marks)
+		{
+		if(mark < 0 || mark > 100)
+		{
+			throw new InvalidmarksException("Invalid marks found"+mark+"Marks shuld be between 0 to 100.");
+			
+		}
+		}
+		student.setMarks(marks);
+		calculatePercentage(student);
+		
+
+}
+	private void calculatePercentage(Student student) {
+		int[] marks = student.getMarks();
+		int sum= 0;
+		for(int mark : marks)
+		{
+			sum +=mark;
+		}
+		float percentage = (float)sum/marks.length;
+		student.setPer(percentage);
+		
+	}
+}
+
