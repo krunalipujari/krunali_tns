@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krunali Pujari | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav>
+    <div class="left">Krunali's Portfolio</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="firstSection" id="home">
+    <div class="leftsection">
+      Hi, my name is <span class="purple">Krunali</span><br>
+      and I am a passionate <span id="element"></span>
+    </div>
+    <div class="rightsection">
+      <img src="KP.jpg" alt="Krunali" />
+    </div>
+  </section>
+
+  <hr>
+
+  <section class="skills-section" id="skills">
+    <h1 style="text-align:center; margin-bottom: 40px;">Skills</h1>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <i class="ri-html5-line"></i>
+        <h3>HTML</h3>
+        <p>Semantic markup, SEO-friendly structure, forms, tables</p>
+      </div>
+      <div class="skill-card">
+        <i class="ri-css3-line"></i>
+        <h3>CSS</h3>
+        <p>Flexbox, Grid, animations, responsive design</p>
+      </div>
+      <div class="skill-card">
+        <i class="ri-javascript-line"></i>
+        <h3>JavaScript</h3>
+        <p>DOM manipulation, ES6+, fetch API, event handling</p>
+      </div>
+      <div class="skill-card">
+        <i class="ri-code-s-slash-line"></i>
+        <i class="ri-java-line"></i>
+        <h3>Java</h3>
+        <p>OOP concepts, JDBC, exception handling</p>
+      </div>
+      <div class="skill-card">
+        <i class="ri-database-2-line"></i>
+        <h3>SQL</h3>
+        <p>Queries, joins, normalization, indexing</p>
+      </div>
+      <div class="skill-card">
+        <i class="ri-git-branch-line"></i>
+        <h3>Git & GitHub</h3>
+        <p>Version control, branches, pull requests</p>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
+  <section class="projects-section" id="projects">
+    <h1 style="text-align: center; margin-bottom: 40px;">Projects</h1>
+    <div class="projects-grid">
+
+      <a href="Event-management.html" target="_blank" class="project-card">
+        <i class="ri-calendar-check-line"></i>
+        <h3>Event Management System</h3>
+        <p>Built an event portal using HTML, CSS, JS with navigation and event type filtering.</p>
+      </a>
+
+      <a href="addmission-management.html" target="_blank" class="project-card">
+        <i class="ri-school-line"></i>
+        <h3>Addmission Management System</h3>
+        <p>Frontend system to manage student admissions, with form validation.</p>
+      </a>
+
+      <a href="E-commerce.html" target="_blank" class="project-card">
+        <i class="ri-shopping-cart-2-line"></i>
+        <h3>E-Commerce Application</h3>
+        <p>Rental-based e-commerce app with Razorpay integration and responsive UI.</p>
+      </a>
+
+    </div>
+  </section>
+
+
+  <hr>
+
+  <section class="resume-section" id="resume">
+    <h2 class="section-title">Resume</h2>
+    <div class="resume-box">
+      <p>You can download or view my resume below:</p>
+      <a href="KRUNALI.Resume.pdf" class="resume-btn" target="_blank">
+        <i class="ri-download-2-line"></i> Download Resume
+      </a>
+    </div>
+  </section>
+
+  <hr>
+
+  <section class="contact-section" id="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <i class="ri-mail-fill"></i>
+        <a href="mailto:krunalipujari@gmail.com">krunalipujari@gmail.com</a>
+      </div>
+      <div class="contact-card">
+        <i class="ri-phone-fill"></i>
+        <a href="tel:+919156380409">+91-9156380409</a>
+      </div>
+      <div class="contact-card">
+        <i class="ri-linkedin-box-fill"></i>
+        <a href="https://www.linkedin.com/in/krunali-pujari-a063553543" target="_blank">
+          linkedin.com/in/krunali-pujari-a063553543
+        </a>
+      </div>
+      <div class="contact-card">
+        <i class="ri-github-fill"></i>
+        <a href="https://github.com/krunalipujari" target="_blank">
+          github.com/krunalipujari
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact-container">
+      <h2>Contact Me</h2>
+      <p>If you have any questions or want to work together, feel free to send me a message.</p>
+
+      <!-- Correct form structure -->
+      <form action="https://formspree.io/f/mblkqlwl" method="POST">
+        <div class="form-group">
+          <input type="text" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Send Message</button>
+      </form>
+
+    </div>
+  </section>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

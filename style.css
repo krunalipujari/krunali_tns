@@ -1,0 +1,424 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', sans-serif;
+}
+
+body {
+  background-color: #000021;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.dark-mode {
+  background-color: #f7f7f7;
+  color: #000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #12123e;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #a896ff;
+}
+
+.left {
+  font-size: 2.5rem;
+}
+
+.firstSection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+
+.leftsection {
+  font-size: 2rem;
+  max-width: 600px;
+  top: 20px;
+  
+}
+
+.purple {
+  color: #a96aff;
+}
+
+.rightsection img {
+  width: 500px;          /* fixed width */
+  height: 500px;         /* same as width */
+  border-radius: 50%;    /* circle shape */
+  object-fit: cover;   
+  object-position: center -10px;
+  border: 3px solid #f2f1f4; /* optional: purple border to match theme */
+  box-shadow: 0 0 10px rgba(228, 227, 230, 0.5); /* optional: subtle glow */
+}
+
+
+
+main hr {
+  margin: 60px auto;
+  width: 80%;
+  height: 1.5px;
+  background: #9c97f1;
+  border: none;
+}
+
+.skills-section {
+  padding: 60px;
+}
+
+.skill-card {
+  background-color: #1e1e4f;
+  padding: 20px;
+  width: 250px;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(156, 151, 241, 0.2);
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  background-color: #2e2e6a;
+}
+
+.skill-card i {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: #a96aff;
+  display: inline-block;
+}
+
+.skill-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.skill-card p {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.progress {
+  height: 10px;
+  background-color: #333;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress div {
+  height: 100%;
+  background-color: #a96aff;
+  border-radius: 20px;
+}
+
+.projects-section {
+  padding: 80px 50px;
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.project-card {
+  background-color: #1e1e4f;
+  padding: 25px 20px;
+  width: 300px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(156, 151, 241, 0.2);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  background-color: #2e2e6a;
+}
+
+.project-card i {
+  font-size: 40px;
+  color: #a96aff;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.project-card h3 {
+  font-size: 1.3rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+#contact p {
+  margin: 10px 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+
+
+.resume-section {
+  padding: 60px 50px;
+  text-align: center;
+}
+
+.resume-section .section-title {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  color: #f7f5f8;
+}
+
+.resume-box {
+  background-color: #1e1e4f;
+  padding: 30px;
+  border-radius: 12px;
+  display: inline-block;
+  box-shadow: 0 4px 12px rgba(156, 151, 241, 0.2);
+
+}
+
+.resume-btn {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #a96aff;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: background 0.3s ease;
+  text-decoration: none;
+}
+
+.resume-btn:hover {
+  background-color: #8b52e5;
+}
+
+.contact-section {
+  padding: 60px 50px;
+  text-align: center;
+}
+
+.contact-section .section-title {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #f6f5f8;
+}
+
+.contact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.contact-card {
+  background-color: #1e1e4f;
+  padding: 20px;
+  border-radius: 10px;
+  width: 280px;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 4px 12px rgba(156, 151, 241, 0.2);
+}
+
+.contact-card:hover {
+  transform: translateY(-10px);
+  background-color: #2e2e6a;
+}
+
+.contact-card i {
+  font-size: 30px;
+  color: #a96aff;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.contact-card a {
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+}
+/* General page styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0a0a23; /* same dark blue as your portfolio */
+  color: #fff;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #111133;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #eceeef; /* accent color */
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+}
+
+h2 {
+  color: #ff9800; /* orange for subheadings */
+  margin-top: 2rem;
+}
+
+p, li {
+  font-size: 1rem;
+}
+
+ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: #f5f7f8;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Section */
+#contact {
+  padding: 80px 20px;
+  background-color: #000021; /* matches portfolio background */
+  text-align: center;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: auto;
+  background: #1e1e4f;; /* matches your card background */
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(156, 151, 241, 0.2);
+
+}
+
+#contact h2 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+#contact p {
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+/* Input & Textarea Styling */
+#contact input,
+#contact textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 12px;
+  background: #1a1a3d; /* matches skill/project box */
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  background: #252552;
+}
+
+form button[type="submit"] {
+  background: linear-gradient(#252552); /* Gradient */
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+   box-shadow: 0 4px 12px rgba(156, 151, 241, 0.2);
+}
+
+form button[type="submit"]:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 20px rgba(156, 151, 241, 0.2);
+}
+
+form button[type="submit"]:active {
+  transform: translateY(0px);
+  box-shadow: 0px 3px 10px rgba(255, 65, 108, 0.3);
+}
+
